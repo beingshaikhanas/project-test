@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>A-ONE ELECTRONICS</title>
+          
+    </head>
+    <body>
+        <header>
+        <div id="main">
+            <div class="logo"></div>
+            <nav>
+                <ul>
+                    <li><a href="home.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+
+                </ul>
+        </div>
+        <div class="text">
+            <p>This is my Electric works & Product Page</p>
+            <h1>WORKING</h1>
+            <span></span>
+            <p>I am an electric engineer and I connects the wires<br>Make your dreams good</p>
+            <br> 
+        </div>
+                </header>
+
+        <footer>
+        <div class="links">
+            <h1>Quick Links</h1>
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+            <a href="gallery.html">Gallery</a>
+        </div>
+        <div class="links">
+            <h1>Mail Us</h1>
+            <a href="">iamshaikhanas@gmail.com</a>
+        </div>
+        <!-- <div class="map"> -->
+            <!-- <iframe -->
+                <!-- src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58737.06637129256!2d72.50308197122418!3d23.058018018209165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e851a5d3e4e0f%3A0x249acb663e46af9b!2sSoft%20Coding%20Solutions!5e0!3m2!1sen!2sin!4v1655878105466!5m2!1sen!2sin" -->
+                 <!-- style="border:0;" allowfullscreen="" loading="lazy" -->
+                <!-- referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+        <!-- </div> -->
+
+        <div class="links">
+            <h1>Our Socials</h1>
+            <div class="social">
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </div>
+          
+        </div>
+    </footer>
+    <script >
+        const number = document.querySelectorAll('.numb')
+        console.log(number)
+        const speed = 100;
+        number.forEach(element => {
+         incNumber(element)
+        });
+         function incNumber(elem){
+             let text =+ elem.innerText
+             const value =+ elem.getAttribute('data-target')
+             // console.log(value)
+             const inc = value/speed
+             if(text<value){
+                 elem.innerText=inc+text;
+                 setTimeout(() => {
+                     incNumber(elem)
+                 }, 20);
+             }
+         }
+
+       
+        </script> 
+
+</body>
+</html>
